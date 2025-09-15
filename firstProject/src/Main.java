@@ -11,13 +11,13 @@ public class Main {
         System.out.println("Welcome "+name+" to your calculator :) ");
 
     //enter your numbers
-        System.out.print("Enter your first number: ");
-        int a = sc.nextInt();
+        System.out.print("Enter your first number: "); // for the same access we can take it easly
+        int a = sc.nextInt(); //
         System.out.print("Enter your second number: ");
         int b = sc.nextInt();
         boolean valid = true;
 
-    while(valid) {
+        while(valid) {
         sc.nextLine();
         System.out.print("Enter the operation you want to do (+ * / -): ");
         String opr = sc.nextLine();
@@ -52,7 +52,7 @@ public class Main {
             default:
                 System.out.println("invalid choice");
         }
-
+// all these actions is for the same direction to take action ahead all the go forward and take it action
         System.out.print("Do you want continue using calculation (y/N): ");
         char choice = sc.next().charAt(0);
         if(choice == 'N' || choice == 'n'){
